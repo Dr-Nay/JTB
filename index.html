@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Nadine E. McClain - The Journey to Becoming</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fffdf9;
+      color: #2c3e50;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      color: white;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 20px;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1, .hero p, .hero a {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 20px auto;
+      animation: fadeInUp 2s ease;
+    }
+
+    .cta {
+      background: linear-gradient(to right, #d4af37, #f1c40f);
+      padding: 15px 30px;
+      color: white;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: #8e44ad;
+    }
+
+    .about-img, .book-img {
+      max-width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+    }
+
+    .book-section {
+      background: linear-gradient(to right, #fff7e1, #fff3e6);
+    }
+
+    .book-benefits {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .book-benefits li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .book-benefits li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #d4af37;
+    }
+
+    .blog-section {
+      background: #f6f6f9;
+    }
+
+    .blog-card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Step Into Your Becoming</h1>
+    <p>This is more than a book. It’s your invitation to transformation, healing, and hope. Begin the journey that’s already waiting for you.</p>
+    <a href="https://a.co/d/4Xn1tVb" class="cta" target="_blank">Buy the Book on Amazon</a>
+  </section>
+
+  <!-- About -->
+  <section>
+    <img src="https://images.unsplash.com/photo-1520975922203-8ac4a47c16cb" alt="Dr. Nadine E. McClain" class="about-img" />
+    <h2 class="section-title">Meet Dr. Nadine</h2>
+    <p>Author. Speaker. Catalyst for transformation. Dr. Nadine E. McClain empowers others to move through disruption and discover the strength of their own becoming.</p>
+  </section>
+
+  <!-- Book -->
+  <section class="book-section">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Book Cover" class="book-img" />
+    <h2 class="section-title">The Journey to Becoming</h2>
+    <p>Keys to Personal Growth and Transformation</p>
+    <ul class="book-benefits">
+      <li>Clarity in seasons of confusion</li>
+      <li>Courage to face disruption</li>
+      <li>Confidence to move forward with purpose</li>
+      <li>Faith-based growth strategies</li>
+      <li>Practical tools for transformation</li>
+    </ul>
+    <a href="https://a.co/d/4Xn1tVb" class="cta" target="_blank">Buy the Book</a>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog-section">
+    <h2 class="section-title">From the Blog</h2>
+    <div class="blog-card">
+      <h3>When Heaven Feels Silent</h3>
+      <p>Discover how to navigate seasons when God feels distant and find deeper faith in the silence.</p>
+    </div>
+    <div class="blog-card">
+      <h3>Behind the Scenes of The Journey</h3>
+      <p>Go behind the scenes of the book and discover how God writes our stories through unexpected challenges.</p>
+    </div>
+    <a href="https://www.nadineelestina.com/blog" class="cta" target="_blank">Visit the Blog</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>"Your journey matters — and your transformation is possible."</p>
+    <p>© 2025 Dr. Nadine E. McClain | <a href="https://a.co/d/4Xn1tVb" target="_blank">Buy the Book</a> | <a href="https://www.nadineelestina.com/blog" target="_blank">Read the Blog</a></p>
+  </footer>
+
+</body>
+</html>
