@@ -5,20 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Dr. Nadine E. McClain</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Use classic, readable serif/sans-serif -->
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Arial&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome CDN (no extra spaces!) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSphJnzGpBtv7BRWhxUQdyTHyg9cy8zWiUZm/dLJ3w8chm3ryd9Wkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    :root {
-      --primary-color: #4C9EBF;
-      --secondary-color: #900C3F;
-      --font-heading: 'Playfair Display', serif;
-      --font-body: 'Open Sans', sans-serif;
-    }
-
+    /* Reset and base styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -26,22 +20,27 @@
     }
 
     body {
-      font-family: var(--font-body);
-      line-height: 1.7;
+      font-family: 'Times New Roman', 'Arial', serif; /* Classic, readable font */
+      font-size: 1.1rem;
+      line-height: 1.8;
       color: #222;
-      background-color: #f5f7fa;
+      background-color: #f8f9fa;
       background-image: url('JTB_website_background.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      padding: 0;
+      margin: 0;
     }
 
+    /* Overlay for readability over background */
     .overlay {
       background-color: rgba(255, 255, 255, 0.88);
       padding: 60px 20px;
     }
 
+    /* Main container */
     .container {
       max-width: 880px;
       margin: auto;
@@ -51,57 +50,77 @@
       border-radius: 10px;
     }
 
+    /* Headings */
     h1, h2 {
-      color: var(--secondary-color);
-      font-family: var(--font-heading);
+      color: #900C3F; /* Deep maroon */
+      font-family: 'Times New Roman', serif;
+      margin-top: 30px;
     }
 
     h1 {
       font-size: 2.6em;
+      margin-bottom: 1rem;
     }
 
     h2 {
-      margin-top: 40px;
       font-size: 1.8em;
     }
 
+    /* Paragraph spacing: double space between paragraphs */
+    p {
+      margin-bottom: 2rem; /* Double spacing */
+    }
+
+    /* Images */
     img.profile {
       display: block;
       max-width: 240px;
-      margin: 20px auto;
+      margin: 30px auto;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     img.book {
       display: block;
       max-width: 200px;
       margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
+    /* Footer */
     .footer {
       text-align: center;
       margin-top: 50px;
       font-style: italic;
       color: #555;
+      font-size: 1.1em;
     }
 
+    /* Links */
     a {
-      color: var(--secondary-color);
+      color: #900C3F;
       text-decoration: none;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social Icons */
     .social-icons {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .social-icons a {
-      font-size: 1.5rem;
-      color: var(--secondary-color);
+    .social-icons i {
+      font-size: 1.6rem;
+      color: #900C3F;
     }
 
+    /* Responsive Design */
     @media (max-width: 768px) {
       .container {
         padding: 20px;
@@ -113,11 +132,8 @@
       h2 {
         font-size: 1.6em;
       }
-      .profile, .book {
-        max-width: 200px;
-      }
-      .footer {
-        font-size: 0.9em;
+      p {
+        margin-bottom: 1.5rem;
       }
     }
 
@@ -135,27 +151,43 @@
   <div class="overlay">
     <div class="container">
       <h1>Hello, I'm Dr. Nadine</h1>
-      <p>Welcome — I’m so glad you’re here. This is more than a website; it’s an invitation to begin your journey of becoming.</p>
-      <p><em>Bahamas-based | Pastor & Author | Biblical Foundation for Personal Transformation</em></p>
+
+      <p>Welcome to my corner of the digital world. I’m so glad you’re here. This is more than a website; it’s an invitation to begin your journey of becoming.</p>
+
+      <p>I'm a transformational author, pastor, and CEO committed to helping you unlock the next chapter of your life with purpose and power. Whether you're navigating change, seeking clarity, or ready to rise, I'm here to walk that journey with you.</p>
 
       <img src="Nay.png" alt="Dr. Nadine Elestina McClain" class="profile" />
 
       <h2>My Story</h2>
-      <p>Success taught me everything except how to truly live. As a CEO and pastor, I learned that achievement without alignment leaves you empty, no matter how impressive the résumé looks. The breakthrough came when I chose courage over comfort, embracing the sacred work of honest self-examination. Because here's what I discovered: the strongest leaders aren't those who avoid pain, but those who transform it into purpose.</p>
+
+      <p>Success taught me that true fulfillment comes not from choosing between achievement and purpose, but from weaving them together. As a CEO and pastor, I learned that achievement without Elohim's alignment leaves you empty no matter how impressive the résumé looks.</p>
+
       <p>My journey through loss, growth, spiritual awakening, and pastoral calling led me to write <em>The Journey to Becoming: Keys to Personal Growth and Transformation</em>, a biblically-grounded guidebook born from years of real-world experience leading organizations, pastoring souls, and discovering that true transformation requires both spiritual depth and practical wisdom.</p>
-      <p>This isn’t just theory on pages, it's a roadmap forged through my own journey of becoming. From becoming the first college graduate in my father's lineage to celebrating achievements that became stepping stones to even greater purpose, from weathering personal storms and professional setbacks to discovering that our greatest breakdowns often become our greatest breakthroughs. Through leading in boardrooms and shepherding souls, from building businesses to building faith, from writing this book over four years of personal transformation to completing my doctorate while navigating family tragedy, living through the COVID-19 pandemic, and walking out my faith with fresh fire — every chapter has been lived, tested, and proven in the crucible of real life.</p>
+
+      <p>This isn’t just theory on pages, it's a roadmap forged through my own journey of becoming. From becoming the first college graduate in my father's lineage to celebrating achievements that became stepping stones to even greater purpose, from weathering personal storms and professional setbacks to discovering that our greatest breakdowns often become our greatest breakthroughs. Through leading in boardrooms and shepherding souls, from building businesses to building faith, from writing this book over four years of personal transformation to completing my doctorate while navigating family tragedy, living through the COVID-19 pandemic, and walking out my faith with fresh fire every chapter has been lived, tested, and proven in the crucible of real life.</p>
+
       <p>Today, I help others begin their own transformational journey through my writing, pastoral ministry, speaking, and meaningful conversations rooted in biblical truth. My mission is to equip you with practical wisdom, spiritual insights grounded in Scripture, and real-world strategies that create lasting change in your life, because transformation isn't just a destination, it's a way of becoming.</p>
+
       <p>This isn't just my story, it's an invitation to write your next chapter.</p>
 
       <h2>About the Book</h2>
+
       <img src="BookstoreDisplay.png" alt="The Journey to Becoming Book Cover" class="book" />
-      <p><em>The Journey to Becoming: Keys to Personal Growth and Transformation</em> is more than a book; it's your companion for the most important journey you'll ever take. Through eleven transformative chapters, you'll discover the biblical foundations for lasting change — from mastering self-discipline and mindset transformation to navigating God's silence and unleashing the power of forgiveness.</p>
+
+      <p><em>The Journey to Becoming: Keys to Personal Growth and Transformation</em> is more than a book; it's your companion for the most important journey you'll ever take.</p>
+
+      <p>Through eleven transformative chapters, you'll discover the biblical foundations for lasting change from mastering self-discipline and mindset transformation to navigating God's silence and unleashing the power of forgiveness.</p>
+
       <p>Each chapter combines scriptural wisdom with practical application, personal testimonies with actionable strategies. This book meets you where you are and guides you where God is calling you to go, whether you're an executive seeking purpose beyond profit, a believer hungry for deeper growth, or someone standing at a crossroads of change.</p>
+
       <blockquote><em>"The measure of intelligence is the ability to change." – Albert Einstein</em></blockquote>
 
       <h2>Let's Connect</h2>
+
       <p>Whether you're interested in speaking engagements, exploring collaboration opportunities, or simply sharing your own journey of becoming — I'd love to hear from you.</p>
+
       <p><strong>Email:</strong> <a href="mailto:info@nadineelestina.com">info@nadineelestina.com</a></p>
+
       <div class="social-icons">
         <a href="https://www.tiktok.com/@elestina242" target="_blank"><i class="fab fa-tiktok"></i></a>
       </div>
